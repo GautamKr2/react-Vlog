@@ -1,11 +1,15 @@
+import { useState } from 'react';
 // import Header, {Profile, name} /*{Aa}*/ from './Header'
 // import CallFun from './withoutJSX'
 // import Fruit from './statesUse'
-import UseProps, { PrintArrayData } from './useProps';
+import HandleClock from './handleClock';
+import UseEffect from './useEffect';
+import UseProps, { CollegeInfo, PrintArrayData } from './useProps';
 // import InputField from "./inputField"
 // import CheckBoxes, { Radio } from "./handleForm"
 
 function App() {
+  const [showClock, setShowClock] = useState(true);
   const obj = {
     name: "Gautam",
     age: 21
@@ -30,7 +34,16 @@ function App() {
     {/* <CheckBoxes /> <hr/>
     <Radio/> */}
 
-    <PrintArrayData/>
+    {/* <PrintArrayData/> */}
+
+    {/* <button onClick={()=>setShowClock(!showClock)}> Hide/Show Clock </button>
+    {showClock && <HandleClock />} <hr/> */}
+
+    {/* <CollegeInfo/> */}
+    
+    {/* <UseEffect /> */}
+
+    
   </>
 }
 export default App;
