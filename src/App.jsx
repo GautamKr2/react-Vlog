@@ -1,7 +1,9 @@
 // import Header, {Profile, name} /*{Aa}*/ from './Header'
 // import CallFun from './withoutJSX'
 // import Fruit from './statesUse'
-import UseProps from './useProps';
+import UseProps, { PrintArrayData } from './useProps';
+// import InputField from "./inputField"
+// import CheckBoxes, { Radio } from "./handleForm"
 
 function App() {
   const obj = {
@@ -18,7 +20,17 @@ function App() {
     <button onClick={()=>alert("You clicked me!")}>Click_me</button> */}
     {/* <Fruit /> */}
 
-    <UseProps ob={obj} />
+    {/* <UseProps ob={obj} />
+    <UseProps color="red">
+      <p style={{color:"orange"}}> This is sent from the calling time. </p>
+    </UseProps> */}
+
+    {/* < InputField /> */}
+
+    {/* <CheckBoxes /> <hr/>
+    <Radio/> */}
+
+    <PrintArrayData/>
   </>
 }
-export default App
+export default App;
