@@ -5,6 +5,7 @@ import { useState } from 'react';
 import HandleClock from './handleClock';
 import UseEffect from './useEffect';
 import UseProps, { CollegeInfo, PrintArrayData } from './useProps';
+import InlineStyle from './styleInReact';
 // import InputField from "./inputField"
 // import CheckBoxes, { Radio } from "./handleForm"
 
@@ -43,7 +44,7 @@ function App() {
     
     {/* <UseEffect /> */}
 
-    
+    <InlineStyle />
   </>
 }
 export default App;
