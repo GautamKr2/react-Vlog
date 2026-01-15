@@ -5,9 +5,11 @@ import { useState } from 'react';
 import HandleClock from './handleClock';
 import UseEffect from './useEffect';
 import UseProps, { CollegeInfo, PrintArrayData } from './useProps';
-import InlineStyle from './styleInReact';
+import InlineStyle from './styleInlineReact';
 // import InputField from "./inputField"
 // import CheckBoxes, { Radio } from "./handleForm"
+import StyleComponent from './styleComponent';
+import UncontrolledComponent from './uncontrolledComponent';
 
 function App() {
   const [showClock, setShowClock] = useState(true);
@@ -44,7 +46,10 @@ function App() {
     
     {/* <UseEffect /> */}
 
-    <InlineStyle />
+    {/* <InlineStyle />
+    < StyleComponent /> */}
+
+    <UncontrolledComponent />
   </>
 }
 export default App;
