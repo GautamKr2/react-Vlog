@@ -10,6 +10,7 @@ import InlineStyle from './styleInlineReact';
 // import CheckBoxes, { Radio } from "./handleForm"
 import StyleComponent from './styleComponent';
 import UncontrolledComponent from './uncontrolledComponent';
+import ForwardRef from './forwardRefP';
 
 function App() {
   const [showClock, setShowClock] = useState(true);
@@ -49,7 +50,9 @@ function App() {
     {/* <InlineStyle />
     < StyleComponent /> */}
 
-    <UncontrolledComponent />
+    {/* <UncontrolledComponent /> */}
+
+    <ForwardRef />
   </>
 }
 export default App;
