@@ -11,6 +11,8 @@ import InlineStyle from './styleInlineReact';
 import StyleComponent from './styleComponent';
 import UncontrolledComponent from './uncontrolledComponent';
 import ForwardRef from './forwardRefP';
+import DerivedState from './derivedState';
+import UseActionState from './useActionState';
 
 function App() {
   const [showClock, setShowClock] = useState(true);
@@ -52,7 +54,11 @@ function App() {
 
     {/* <UncontrolledComponent /> */}
 
-    <ForwardRef />
+    {/* <ForwardRef /> */}
+
+   <DerivedState />
+   <hr style={{border: '2.5px solid #167eab31'}} />
+   <UseActionState />
   </>
 }
 export default App;
